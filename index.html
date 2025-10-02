@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>平台維護公告</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚠️</text></svg>">
+    <link rel="icon" type="image/png" href="smeethicon_144.png">
     <style>
         * {
             margin: 0;
@@ -14,13 +14,21 @@
 
         body {
             font-family: 'Microsoft JhengHei', 'Arial', sans-serif;
-            height: 100vh;
+            min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
             background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-                        url('RWD_login_bg@1x.webp') center no-repeat fixed;
-            background-size: 120%;
+                        url('RWD_login_bg@1x.webp') center no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        
+        /* 桌面版背景放大效果 */
+        @media (min-width: 601px) {
+            body {
+                background-size: 120%;
+            }
         }
 
         .notice-container {
