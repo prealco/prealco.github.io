@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
-
-    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="smeethicon_144.png">
-    <title>SmeetH私覓 - 私密交友｜聊色軟體｜素人自拍短片 | smeeth.in</title>
+    <title>平台維護公告</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚠️</text></svg>">
     <style>
         * {
             margin: 0;
@@ -21,7 +19,7 @@
             justify-content: center;
             align-items: center;
             background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-                        url('RWD_login_bg@1x.webp') center no-repeat fixed;
+                        url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920') center no-repeat fixed;
             background-size: 120%;
         }
 
@@ -35,6 +33,119 @@
             overflow-y: auto;
             padding: 40px 30px;
             animation: slideIn 0.5s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .notice-icon {
+            text-align: center;
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #d32f2f;
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        .content {
+            color: #333;
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        .content p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .highlight {
+            background: #fff3cd;
+            padding: 15px;
+            border-left: 4px solid #ffc107;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .date-highlight {
+            color: #d32f2f;
+            font-weight: bold;
+        }
+
+        /* 手機版適配 */
+        @media (max-width: 600px) {
+            .notice-container {
+                width: 95%;
+                padding: 30px 20px;
+                max-height: 90vh;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            .content {
+                font-size: 15px;
+            }
+
+            .notice-icon {
+                font-size: 40px;
+            }
+        }
+
+        /* 滾動條樣式 */
+        .notice-container::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .notice-container::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+
+        .notice-container::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 10px;
+        }
+
+        .notice-container::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="notice-container">
+        <div class="notice-icon">⚠️</div>
+        <h1>【平台維護與升級公告】</h1>
+        <div class="content">
+            <p>
+                平台將於 <span class="date-highlight">10 月 6 日 00:00 起</span> 進行系統維護與全面升級改版。本次調整不僅是為解決當前系統架構的限制，更是平台長期規劃的一環，目的是導入全新的經營模式，並進一步提升安全性、穩定性與服務效率。
+            </p>
+            
+            <div class="highlight">
+                在此期間，平台將暫停收益結算作業。本月份收益將如期結算至 9 月底，自 10 月起暫不結算，待新制度與模式正式啟用後，再恢復收益分潤的結算，進一步相關細節將另行公布。
+            </div>
+            
+            <p>
+                平台這次升級改版亦是為了確保未來的營運更具持續性與競爭力，並在升級完成後帶來更完善的合作環境，請持續留意後續公告。
+            </p>
+        </div>
+    </div>
+</body>
+</html>            animation: slideIn 0.5s ease-out;
         }
 
         @keyframes slideIn {
